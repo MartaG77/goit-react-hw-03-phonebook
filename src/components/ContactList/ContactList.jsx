@@ -32,21 +32,12 @@ const ContactList = ({ setPhonebook, phonebook, filteredContacts }) => {
 };
 
 ContactList.propTypes = {
-    setPhonebook: PropTypes.func.isRequired,
-    phonebook: PropTypes.shape({
-      contacts: PropTypes.array.isRequired,
-      filter: PropTypes.string.isRequired,
-    }).isRequired,
-    filteredContacts: PropTypes.array.isRequired,
-  };
-
-export default ContactList;
-
-ContactList.propTypes = {
-  setPhonebook: PropTypes.func.isRequired,
   phonebook: PropTypes.shape({
     contacts: PropTypes.array.isRequired,
     filter: PropTypes.string.isRequired,
   }).isRequired,
+  setPhonebook: PropTypes.func.isRequired,
   filteredContacts: PropTypes.array.isRequired,
 };
+
+export default ContactList;
